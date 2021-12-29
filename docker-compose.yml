@@ -9,3 +9,9 @@ services:
             - 80:80
         volumes:
             - .:/var/www
+
+    composer:
+        image: composer:2.2
+        command: install
+        volumes:
+            - .:/app
